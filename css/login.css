@@ -1,0 +1,81 @@
+/*Paelta de colores
+#0CB1F2 azul claro
+#F3F3F3 gris login, register
+#0D0D0D negro 
+#1B51F2 azul oscuro footer
+#5E90F2 azul Medio claro nav
+#23459F azul extra*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*adaparta el contenido de la caja*/
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+}
+
+.formLogin {
+    width: 23%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 15px;
+    border: 4px solid gray;
+    padding: 25px 35px;
+    margin-top: 5%;
+    background-color: #F3F3F3;
+}
+
+.formLogin>h1 {
+    color: #0D0D0D;
+    font-size: 23px;
+    margin: 9% 0%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formLogin>input,
+label,
+button,
+select {
+    display: inline-block;
+    width: 70%;
+    margin: 2% 0%;
+    font-size: 15px;
+}
+
+.formLogin>input {
+    padding: 10px 2px;
+    border-radius: 8%;
+    outline: none;
+}
+
+.formLogin>label {
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Boton */
+.btn {
+    background: #0CB1F2;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 60px 0px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* seccion de lo de abajo boton*/
+.formLogin>a {
+    color: #0D0D0D;
+    font-size: 11px;
+    margin: 2% 0%;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
