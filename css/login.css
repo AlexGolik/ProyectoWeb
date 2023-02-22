@@ -74,13 +74,10 @@ body {
     font-weight: bold;
     display: block;
     border: 0;
-    
-
 }
 
 .btnLogin:hover{
     background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
-
 }
 
 /* seccion de lo de abajo boton*/
