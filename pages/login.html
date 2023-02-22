@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
 </head>
 
 <body>
     <form id="formLogin" class="formLogin">
-        <h1>Login</h1>
-        <label for="nameLogin">NOMBRE DEUSUARIO</label>
+        <h1>Iniciar Sesión</h1>
+        <label for="nameLogin">NOMBRE DE USUARIO</label>
         <input type="text" class="controluno" id="nameLogin" name="nameLogin" placeholder="@"
             maxlength="10" minlength="3" required> <!--USUARIO-->
         <label for="passwordLogin">CONTRASEÑA</label>
         <input type="password" class="passwordLogin" placeholder=""
-            required title="Ingresa tu contraseña" name="passwordLogin" id="passwordLogin"><br><br> <!--CONTRASEÑA-->
-        <button type="submit" class="btn" id="btn">INICIAR SESIÓN</button>
-        <a href="#">¿NO PUEDES INICIAR SESIÓN?</a>
-        <a href="#">CREAR CUENTA</a></form>
+            required title="Ingresa tu contraseña" name="passwordLogin" id="passwordLogin"> <!--CONTRASEÑA-->
+        <button type="submit" class="btnLogin" id="btnLogin">INICIAR SESIÓN</button>
+        <a for="termino">¿NO PUEDES INICIAR SESIÓN?</a>
+        <a href="./registrar.html">CREAR CUENTA</a>
+    </form>
 </body>
 </html>

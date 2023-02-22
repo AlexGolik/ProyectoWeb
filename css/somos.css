@@ -11,63 +11,74 @@
     box-sizing: border-box;
     /*adaparta el contenido de la caja*/
 }
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-attachment: fixed;
     /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
 }
-
-.formLogin {
-    width: 28%;
+.quiensomos {
+    width: 90%;
     height: auto;
     margin: 5% auto;
     border-radius: 15px;
     padding: 25px 35px;
     margin-top: 5%;
-    background-color: #EDEDE8;
 
 }
 
-.formLogin>h1 {
-    color: #0D0D0D;
-    font-size: 19px;
-    margin: 6% 0%;
-    text-align: center;
-    font-weight: bold;
+.somoslogo{
+    width: 40%;
+    height: 30%;
 }
 
-.formLogin>input, label, button, select {
+.quiensuport{
+
     display: inline-block;
-    width: 100%;
+    
+}
+
+.quiensuport>h1 {
+    color: #0D0D0D;
+    font-size: 20px;
     margin: 2% 0%;
-
-}
-
-.formLogin>input {
-    padding: 12px 2px;
-    border-radius: 8%;
-    outline: none;
-    border-radius: 5px;
-    border: 0;
-
-}
-
-.formLogin>label {
     text-align: left;
-    margin-top: 20px;
     font-weight: bold;
-    font-size: 11px;
 }
 
-/* Boton */
-.btnLogin {
+.quiensuport>h2 {
+    color: #0D0D0D;
+    font-size: 20px;
+    margin: 4% 0%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.quiensuport>p {
+    color: #0D0D0D;
+    font-size: 20px;
+    margin: 4% 0%;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.somosP{
+
+    display: inline;
+    color: #0D0D0D;
+    font-size: 14px;
+    margin: 4% 0%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.btnSomos {
     background: #0CB1F2;
     border-radius: 6px;
     color: #fff;
     font-size: 15px;
     padding: 10px 20px;
-    margin: 15%;
+    margin: 6%;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
@@ -76,20 +87,4 @@ body {
     border: 0;
     
 
-}
-
-.btnLogin:hover{
-    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
-
-}
-
-/* seccion de lo de abajo boton*/
-.formLogin>a {
-    color: #0D0D0D;
-    font-size: 10px;
-    margin: 3% 0%;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
-    text-align: center;
 }

@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
     <title>Registrarse</title>
 </head>
 <body>
-    <header>
+
+    <form id="formRegister" class="formRegister">
         <h1>Registrarse</h1>
-    </header>
-    <form id="form" class="form">
+        <label for="nameRegister">NOMBRE DE USUARIO</label>
+        <input type="text" class="controluno" id="nameRegister" name="nameRegister" placeholder=""
+         maxlength="10" minlength="3" required> <!--USUARIO-->
 
-        <label for="name">Nombre de usuario</label><br>
-        <input type="text" class="controluno" id="name" name="name" placeholder="Usuario"
-         maxlength="10" minlength="3" required><br> <!--USUARIO-->
+        <label for="emailRegister">CORREO ELECTRONICO</label>
+        <input type="email" class="controluno" placeholder="@" required title="Ingresa tu contraseña" name="emailRegister" id="emailRegister"><!--CONTRASEÑA-->
 
-        <label for="password">CONTRASEÑA</label><br>
-        <input type="password" class="controluno" placeholder="Contraseña" required title="Ingresa tu contraseña" name="pass" id="pass"><br><br> <!--CONTRASEÑA-->
+        <label for="passwordRegister">CONTRASEÑA</label>
+        <input type="password" class="controluno" placeholder="" required title="Ingresa tu contraseña" name="passwordRegister" id="passwordRegister"><!--CONTRASEÑA-->
 
-        <button type="submit" class="btn" id="btn">INICIAR SESIÓN</button><br><br>
+        <label for="passwordRegisterDos">REPETIR CONTRASEÑA</label>
+        <input type="password" class="controluno" placeholder="" required title="Ingresa tu contraseña" name="passwordRegisterDos" id="passwordRegisterDos"><!--CONTRASEÑA-->
 
-        <label for="termino">¿YA TIENES CUENTA?</label><br>
-        <a href="#">INICIAR SESION</a>
+        <button type="submit" class="btnRegister" id="btnRegister">Iniciar Sesión</button>
+
+        <a for="termino">¿YA TIENES CUENTA?</a>
+        <a href="./login.html">INICIAR SESIÓN</a>
 
     </form>
 </body>
