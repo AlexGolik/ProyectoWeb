@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario servicio</title>
+</head>
+<body>
+    <header>
+
+        <!-- Logo -->
+        <a class="logo" href="#">PortalSupport
+            <img src="#" id="logo">
+        </a>
+
+        <!-- Navegador -->
+        <nav class="navegador">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+            </ul>
+
+              <!-- Desplegable servicios -->
+            <ul>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Soporte de redes</a></li>
+                <li><a href="#">Soporte de impresoras</a></li>
+                <li><a href="#">Soporte remoto</a></li>
+                <li><a href="#">Asesoria</a></li>
+            </ul>
+            <!-- Desplegable Productos -->
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Software</a></li>
+            </ul>
+            
+            <!-- Buscador -->
+            <div class="buscar">
+                Buscar<input type="text">
+            </div>
+
+            <!-- Botones de Ingreso y Registro -->
+            <button class="ingresar">Ingresar</button>
+            <button class="registrarse">Registrarse</button>
+        </nav>
+    </header>
+
+    <section class="soliservicio">
+        <h1>Solicitud de servicio</h1>
+        <p>Programa hoy tu servicio de soporte técnico remoto y soluciona los problemas con tus equipos de cómputo ya sean portátiles, pc de escritorio, servidores y redes de comunicaciones.</p>
+        <form id="formser" class="formser">
+
+            <label for="name">NOMBRES</label><br>
+            <input type="text" class="controdos" id="name" name="name" placeholder="Nombres"
+            maxlength="25" minlength="3" required><br> <!--nombre-->
+
+            <label for="lastname">APELLIDOS</label><br>
+            <input type="text" class="controdos" id="lastname" name="lastname" placeholder="Apellidos"
+            maxlength="25" minlength="3" required><br> <!--apellidos-->
+
+
+            <label for="email">CORREO ELECTRONICO</label><br>
+            <input type="email" class="controdos" name="emai" id="mail" required placeholder="@" min="18" max="65"><br> <!--CORREO ELECTRONICO-->
+
+            <label for="telef">TELEFONO</label><br>
+            <input type="number" class="controdos" placeholder="Telefono" required name="telef" id="telef"><br> <!--Telefono-->
+
+            <label for="tipo">TIPO DE SERVICIO</label><br><!--tipo serv-->
+            <select name="serv" id="tiposer">
+            <optgroup label="Tipo servicio">
+                <option value="java">Seleccione servicio</option>
+                <option value="mantecompu">Mantenimiento de computadoras</option>
+                <option value="manteimpre">Mantenimiento de impresoras</option>
+                <option value="sopores">Soporte de redes</option>
+                <option value="soporremo">Soporte remoto</option>
+                <option value="aseso">Asesorias</option>
+            </optgroup>
+            </select>
+            <br>
+        <button type="submit" class="btn" id="btn">Enviar Solicitud</button><br><br>
+
+        </form>
+    </section>
+
+    <main>
+        <footer class="pie">
+            <h2>PortalSupport</h2>
+            <p>Recibe soporte técnico integral con la experiencia 
+                y calidad por parte de una empresa de mantenimiento de computadores.</p>
+
+            <h3>Páginas</h3>
+            <ul>
+                <li><a href="#"></a>Inicio</li>
+                <li><a href="#"></a>Servicios</li>
+                <li><a href="#"></a>Productos</li>
+                <li><a href="#"></a>Quienes somos</li>
+            </ul>
+            <h3>Servicios</h3>
+            <ul>
+                <li><a href="#"></a>Mantenimiento</li>
+                <li><a href="#"></a>Ensamble</li>
+                <li><a href="#"></a>Asesoria</li>
+            </ul>
+            <h3>Contácto</h3>
+            <ul>
+                <li><img src="#"><a href="#">telefono</a></li>
+                <li><img src="#"><a href="#">email</a></li>
+                <li><img src="#"><a href="#">dirección</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
