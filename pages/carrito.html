@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito</title>
+    <link rel="stylesheet" href="../css/productos.css">
 </head>
+
 
 <body>
     <header>
@@ -46,29 +48,24 @@
             <button class="registrarse">Registrarse</button>
         </nav>
     </header>
-    <main>
-        <h1>carrito</h1>
-
-        <section>
-           <img class="icon" src="#" alt="icono">carrito<!--icono del carrito-->
-        </section>
-
-        <section>
-            <h2>comprar</h2>
-            <select name="pago" id="pago"><!--desplegar seleccionar medio de pago-->
-                <option value="0" selected>mediop de pago</option>
+    <hr>
+    <main >
+     <div class="containercarrito">
+       <h1 class="h1carrito" > mi carrito</h1>
+            <br>
+            <section class="cadrscarrito" id="cadrscarrito">
+            </section>
+            <select name="pagocarrito" class="pagocarrito" id="pagocarrito"><!--desplegar seleccionar medio de pago-->
+                <option value="0" selected>medio de pago</option>
                 <option value="contraentrega">contraentrega</option>
                 <option value="tarjeta">tarjeta</option>
                 <option value="otro medio">otro medio</option>
             </select>
-            <button type="submit">pagar</button><!--boton para pagar -->
-            <button type="button">quitear del carrito</button>
-
-        </section>
-
-        
-
+            <button class="butoncarrito" type="button">pagar</button><!--boton para pagar -->
+            <button class="butoncarrito" type="button">quitar del carrito</button>
+    </div>
          <!-- Pie de página -->
+         <hr>
          <footer class="pie">
             <h2>PortalSupport</h2>
             <p> Recibe soporte técnico integral con la experiencia
@@ -94,5 +91,7 @@
             </ul>
         </footer>
     </main>
+    <script src="https://kit.fontawesome.com/0f1e390382.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

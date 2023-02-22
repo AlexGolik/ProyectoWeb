@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*adaparta el contenido de la caja*/
+}
+/*seccion de ofertas*/
+.ofertas{
+    width: 100% ;
+    height: auto;
+    background-color:#EDEDE8;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+ 
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+}
+.tarjetaof{
+      display: inline-block;
+    width: 20%;
+
+}
+.tarjetaof :hover{
+    background-color: rgba(0, 0, 0, 0.082);
+    transition: 0.5s;
+
+}
+
+.imgofer{
+    width: 60%;
+    height: 40%;
+
+}
+.botonproof{
+    background: #0CB1F2;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 2% 3%;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    width: 50%;
+}
+
+
+
+/*seccion de categorias*/
+h2{
+    text-align: center;
+    margin: 20px;
+}
+.categoria{
+    text-align: center;
+    width: 100% ;
+    height: auto;
+    overflow: auto;
+    background-color:#EDEDE8;
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+}
+.categoria>div{
+    display:inline-block;
+    width: 15%;
+    height: auto;
+    
+}
+.categoria>div  :hover{
+   margin: 2px;
+   transition: 0.3s;
+   background-color: rgba(0, 0, 0, 0.066);
+}
+.categoria>div>img{
+   width: 60%;
+   height: 40%;
+   margin: 5px;
+    
+}
+/*seccion productos*/
+.filtarpro{
+    width: 20%;
+    border: solid 1px rgb(74, 73, 73);
+    border-radius: 8%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #EDEDE8;
+   
+}
+.productos{
+    width: 100% ;
+    height: auto;
+    background-color:#EDEDE8;
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+}
+
+.cardspro{
+    display: inline;
+    position: relative;
+    left: 30%;
+}
+.cardspro>div{
+   
+    width: 60%;
+    height: auto;
+
+}
+.imgpro{
+    width: 30%;
+    height: 10%;
+    margin: 5px;
+
+}
+
+.cardspro  :hover{
+ background-color: rgba(0, 0, 0, 0.082);
+ transition: 0.5s;
+ 
+
+}
+.botonpro{
+    background: #0CB1F2;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 2% 3%;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0;
+    width: 15%;
+}
+
+
+
+.botonpro :hover{
+    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*carrito de compras*/
+.containercarrito{
+    width: 100%;
+    height: auto;
+    background-color: #EDEDE8;
+
+}
+
+.h1carrito{
+    text-align: right;
+    width: 100%;
+   
+}
+
+/*.cadrscarrito{
+    width: 100%;
+    height: auto
+    background-color: #EDEDE8;
+
+   
+}*/
+.pagocarrito{
+    width: 14%;
+    text-align: center;
+    background-color: #EDEDE8;
+    margin: 0;
+    margin-left: 0;
+
+}
+.butoncarrito{
+    background: #0CB1F2;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border: 0;
+    width: 10%;
+
+}
+.butoncarrito :hover{
+    width: 2px;
+    background-color: aqua;
+}
+.pagocarrito{
+    border-radius: 8%;
+    outline: none;
+   
+}
+
+
+
