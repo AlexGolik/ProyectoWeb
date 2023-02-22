@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Login</title>
 </head>
+
 <body>
-    <header>
-        <h1>Iniciar sesión</h1>
-    </header>
-    <form id="form" class="form">
-
-        <label for="name">USUARIO</label><br>
-        <input type="text" class="controluno" id="name" name="name" placeholder="Usuario"
-         maxlength="25" minlength="3" required><br> <!--USUARIO-->
-
-        <label for="email">CORREO ELECTRONICO</label><br>
-        <input type="email" class="controluno" name="emai" id="mail" required placeholder="@" min="18" max="65"><br> <!--CORREO ELECTRONICO-->
-
-        <label for="password">CONTRASEÑA</label><br>
-        <input type="password" class="controluno" placeholder="Contraseña" required title="Ingresa tu contraseña" name="pass" id="pass"><br> <!--CONTRASEÑA-->
-
-        <label for="password">REPETIR CONTRASEÑA</label><br>
-        <input type="password" class="controluno" placeholder="Repetir contraseña" required title="Ingresa tu contraseña" name="passdos" id="passdos"><br><br> <!--CONTRASEÑA-->
-
-        <button type="submit" class="btn" id="btn">REGISTRARSE</button><br><br>
-
-        <label for="termino">¿NO PUEDES INICIAR SESIÓN?</label><br>
-        <a href="#">CREAR CUENTA</a>
-
-    </form>
+    <form id="formLogin" class="formLogin">
+        <h1>Login</h1>
+        <label for="nameLogin">NOMBRE DEUSUARIO</label>
+        <input type="text" class="controluno" id="nameLogin" name="nameLogin" placeholder="@"
+            maxlength="10" minlength="3" required> <!--USUARIO-->
+        <label for="passwordLogin">CONTRASEÑA</label>
+        <input type="password" class="passwordLogin" placeholder=""
+            required title="Ingresa tu contraseña" name="passwordLogin" id="passwordLogin"><br><br> <!--CONTRASEÑA-->
+        <button type="submit" class="btn" id="btn">INICIAR SESIÓN</button>
+        <a href="#">¿NO PUEDES INICIAR SESIÓN?</a>
+        <a href="#">CREAR CUENTA</a></form>
 </body>
 </html>
