@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apartado de productos</title>
+    <link rel="stylesheet" href="../css/productos.css">
 </head>
 
 <body>
@@ -48,104 +49,107 @@
     </header>
     <main>
         <h1>productos</h1><!--titulo-->
+        
+        <h2>------ofertas------</h2><!--apartado de ofertas-->
+        <hr>
         <section class="ofertas">
-            <h2>ofertas</h2><!--apartado de ofertas-->
-            <div class="carrusel"></div>   <!--div para el carrusel -->
-                <div class="tarjeta"><!-- card 1-->
-                    <div class="titulo">pc gamer</div>
-                    <div class="cuerpo">
-                    <img src="#" alt="cloud data">
+                <div class="tarjetaof"><!-- card 1-->
+                    <h1 class="titulo">pc gamer</h1> 
+                    <img class="imgofer" src="../assets/img/oferta1.webp" alt="cloud data">
+                    <p class="cuerpo">
                      50% de descuento si compras ahora
-                    </div>
-                    <div class="pie">
-                    <button type="submit">añadir al carrito</button><!--boton para agregar al carrito -->
-                    </div>
+                    </p>
+                    <button class="botonproof" type="submit">añadir al carrito</button><!--boton para agregar al carrito -->
                 </div>
-                <div class="tarjeta"><!-- card 2-->
-                    <div class="titulo">chasis</div>
-                    <div class="cuerpo">
-                    <img src="#" alt="cloud data">
-                     por la compra del chasis te regalamos la instalacion 
-                    </div>
-                    <div class="pie" alt=" cloud data">
-                    <button>añadir al carrito</button><!--boton para agregar al carrito-->
-                    </div>
+                <div class="tarjetaof"><!-- card 2-->
+                    <h1 class="titulo">mouse  gamer</h1> 
+                    <img class="imgofer"  src="../assets/img/M908_PNGWEB_1.png" alt="cloud data">
+                    <p class="cuerpo">
+                     50% de descuento si compras ahora
+                    </p>
+                    <button class="botonproof"type="submit">añadir al carrito</button><!--boton para agregar al carrito -->
                 </div>
-                <div class="tarjeta"> <!-- card 3-->
-                    <div class="titulo">combo pcgamer</div>
-                    <div class="cuerpo">
-                    <img src="#" alt="cloud data">
-                     combo pc gamer conm el 60% de descuento 
-                    </div>
-                    <div class="pie">
-                    <button>añadir al carrito</button><!--boton para agregar al carrito-->
-                    </div>
-                </div>  
-            </div>          
-        </section>
-        <section class="categoria"><!--seccion categoria-->
-            <h2>------Categorias------</h2>
-            
-            <div class="card">
-                <h3 class="title-card">portatiles</h3>
-                <img src="#" alt="cloud data">               
-            </div> 
-            <div class="card">
-                <h3 class="title-card">chasis</h3>
-                <img src="#" alt="cloud data">
-            </div>
-            <div class="card">
-                <h3 class="title-card" >componentes</h3>
-                <img src="#" alt="cloud data">
-            </div>
-            
-            <div class="card">
-                <h3 class="title-card" >monitores</h3>
-                <img src="#" alt="cloud data">
-            </div>
-            <div class="card">
-                <h3 class="title-card" >perifericos</h3>
-                <img src="#" alt="cloud data">
-            </div>
-        </section>
-        <section class="productos">
-            <h2>------productos------</h2><!--seccion de productos-->
+                <div class="tarjetaof"><!-- card 2-->
+                    <h1 class="titulo">base gamer</h1> 
+                    <img class="imgofer" src="../assets/img/baseee.webp" alt="cloud data">
+                    <p class="cuerpo">
+                     50% de descuento si compras ahora
+                    </p>
+                    <button class="botonproof" >añadir al carrito</button><!--boton para agregar al carrito -->
+                </div>        
+        </section><br><br>
 
-            <select class="filtar" name="filtar" id="filtar">  <!--filtros-->
+
+        <h2 >------Categorias------</h2>
+        <hr>
+        <section class="categoria"><!--seccion categoria-->
+            
+            <div class="cardcat">
+                <img src="../assets/img/portatilcat.png" alt="cloud data">   
+                <h3 class="title-card">portatiles</h3>            
+            </div> 
+            <div class="cardcat">
+                <img src="../assets/img/chasis1.png" alt="cloud data">
+                <h3 class="title-card">chasis</h3>
+            </div>
+            <div class="cardcat">
+                <img src="../assets/img/componentes1.png" alt="cloud data">
+                 <h3 class="title-card" >componentes</h3>
+            </div>
+            
+            <div class="cardcat">
+                <img src="../assets/img/monitor1.webp" alt="cloud data">
+                <h3 class="title-card" >monitores</h3>
+            </div>
+            <div class="cardcat">
+                <img src="../assets/img/perifericos.png" alt="cloud data">
+                <h3 class="title-card" >perifericos</h3>
+            </div>
+        </section>
+        <h2>------productos------</h2><!--seccion de productos-->
+        <hr>
+        <section class="productos">
+            
+
+            <select class="filtarpro" name="filtarpro" id="filtar">  <!--filtros-->
                 <option value="0" selected>filtar por:</option>
                 <option value="precio">precio</option>
                 <option value="marca">marca</option>
                 <option value="portatiles">portatiles</option>
-                <option value="pc de mesa">pc de mesa</option>
+                <option value="pc de mesa">pc de mesa</option> 
+               
             </select>
-            <button type="">filtar</button><!--boton para filtar-->
-
-            <div class="card">
-                <h3 class="title-card" >producto 1</h3>
-                <img src="#" alt="cloud data">
-                <button>añadir al carrito</button>
-            </div>
-            <div class="card">
-                <h3 class="title-card" >producto 2</h3>
-                <img src="#" alt="cloud data">
-                <button>añadir al carrito</button>
-            </div>
-            <div class="card">
-                <h3 class="title-card" >producto 3</h3>
-                <img src="#" alt="cloud data">
-                <button>añadir al carrito</button>
-            </div>
-            <div class="card">
-                <h3 class="title-card" >producto 4</h3>
-                <img src="#" alt="cloud data">
-                <button>añadir al carrito</button>
-            </div>
-            <div class="card">
-                <h3 class="title-card" >producto 5</h3>
-                <img src="#" alt="cloud data">
-                <button>añadir al carrito</button>
-            </div>
+           
+            <section class="cardspro">
+                <div class="card">
+                    <img class="imgpro" src="../assets/img/monitor1.webp" alt="cloud data">
+                    <p class="title-card" >KOORUI Monitor de computadora de 24 pulgadas Full HD 1920 x 1080p, </p>
+                </div >
+                <button class="botonpro">añadir al carrito</button>
+                <div class="card">
+                    <img class="imgpro" src="../assets/img/monitor22.png" alt="cloud data">
+                    <p class="title-card" >Monitor de computadora de 24 pulgadas Full HD 1920 x 1080p,</p>
+                </div>
+                <button class="botonpro">añadir al carrito</button>
+                <div  class="card">
+                     <img class="imgpro" src="../assets/img/ramm.png" alt="cloud data">
+                    <p class="title-card" >memoria ram de 16 gb</p>
+                </div>
+                <button class="botonpro">añadir al carrito</button>
+                <div class="card">
+                    <img class="imgpro" src="../assets/img/grafica.webp" alt="cloud data">
+                    <p class="title-card" >grafica ultimo modelo hiperomegaultrabuena</p>
+                </div>
+                <button class="botonpro">añadir al carrito</button>
+                <div class="card">
+                    <img class="imgpro" src="../assets/img/silla-gamer-power-group_blue_1.png" alt="cloud data">
+                    <p class="title-card" >silla comodisisisisima gamer </p>
+                </div> 
+                    <button class="botonpro">añadir al carrito</button>
+            
+           
         </section>
+        <hr>
 
         
     <!-- Pie de página -->
@@ -174,5 +178,7 @@
             </ul>
         </footer>
     </main>
+    <script src="https://kit.fontawesome.com/0f1e390382.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
