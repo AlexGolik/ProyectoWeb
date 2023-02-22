@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formservicio.css">
     <title>Formulario servicio</title>
 </head>
 <body>
@@ -49,25 +50,25 @@
     <section class="soliservicio">
         <h1>Solicitud de servicio</h1>
         <p>Programa hoy tu servicio de soporte técnico remoto y soluciona los problemas con tus equipos de cómputo ya sean portátiles, pc de escritorio, servidores y redes de comunicaciones.</p>
-        <form id="formser" class="formser">
+        <form id="formServicio" class="formServicio">
+            
+            <label for="nameServicio">NOMBRES</label>
+            <input type="text" class="nameServicio" id="nameServicio" name="nameServicio" placeholder=""
+            maxlength="25" minlength="3" required> <!--nombre-->
+          
+            <label for="lastnameServicio">APELLIDOS</label>
+            <input type="text" class="lastnameServicio" id="lastnameServicio" name="lastnameServicio" placeholder=""
+            maxlength="25" minlength="3" required> <!--apellidos-->
+   
 
-            <label for="name">NOMBRES</label><br>
-            <input type="text" class="controdos" id="name" name="name" placeholder="Nombres"
-            maxlength="25" minlength="3" required><br> <!--nombre-->
+            <label for="emailServicios">CORREO ELECTRONICO</label><br>
+            <input type="email" class="emailServicios" name="emailServicios" id="emailServicios" required placeholder="@" min="18" max="65"> <!--CORREO ELECTRONICO-->
 
-            <label for="lastname">APELLIDOS</label><br>
-            <input type="text" class="controdos" id="lastname" name="lastname" placeholder="Apellidos"
-            maxlength="25" minlength="3" required><br> <!--apellidos-->
+            <label for="telefonoServicio">TELEFONO</label>
+            <input type="number" class="telefonoServicio" placeholder="Telefono" required name="telefonoServicio" id="telefonoServicio"><!--Telefono-->
 
-
-            <label for="email">CORREO ELECTRONICO</label><br>
-            <input type="email" class="controdos" name="emai" id="mail" required placeholder="@" min="18" max="65"><br> <!--CORREO ELECTRONICO-->
-
-            <label for="telef">TELEFONO</label><br>
-            <input type="number" class="controdos" placeholder="Telefono" required name="telef" id="telef"><br> <!--Telefono-->
-
-            <label for="tipo">TIPO DE SERVICIO</label><br><!--tipo serv-->
-            <select name="serv" id="tiposer">
+            <label for="tipoServicio">TIPO DE SERVICIO</label><br><!--tipo serv-->
+            <select name="servicioTipo" id="servicioTipo">
             <optgroup label="Tipo servicio">
                 <option value="java">Seleccione servicio</option>
                 <option value="mantecompu">Mantenimiento de computadoras</option>
@@ -78,7 +79,7 @@
             </optgroup>
             </select>
             <br>
-        <button type="submit" class="btn" id="btn">Enviar Solicitud</button><br><br>
+        <button type="submit" class="btnServicio" id="btnServicio">Enviar Solicitud</button><br><br>
 
         </form>
     </section>

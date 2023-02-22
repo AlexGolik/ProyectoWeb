@@ -18,7 +18,7 @@ body {
     /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
 }
 
-.formLogin {
+.formRegister {
     width: 28%;
     height: auto;
     margin: 5% auto;
@@ -26,10 +26,9 @@ body {
     padding: 25px 35px;
     margin-top: 5%;
     background-color: #EDEDE8;
-
 }
 
-.formLogin>h1 {
+.formRegister>h1 {
     color: #0D0D0D;
     font-size: 19px;
     margin: 6% 0%;
@@ -37,14 +36,14 @@ body {
     font-weight: bold;
 }
 
-.formLogin>input, label, button, select {
+.formRegister>input, label, button, select {
     display: inline-block;
     width: 100%;
     margin: 2% 0%;
 
 }
 
-.formLogin>input {
+.formRegister>input {
     padding: 12px 2px;
     border-radius: 8%;
     outline: none;
@@ -53,7 +52,7 @@ body {
 
 }
 
-.formLogin>label {
+.formRegister>label {
     text-align: left;
     margin-top: 20px;
     font-weight: bold;
@@ -61,12 +60,12 @@ body {
 }
 
 /* Boton */
-.btnLogin {
+.btnRegister {
     background: #0CB1F2;
     border-radius: 6px;
     color: #fff;
     font-size: 15px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     margin: 15%;
     margin-right: auto;
     margin-left: auto;
@@ -78,16 +77,16 @@ body {
 
 }
 
-.btnLogin:hover{
-    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
-
+.btnRegister:hover{
+    background:  linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
+    
 }
 
 /* seccion de lo de abajo boton*/
-.formLogin>a {
+.formRegister>a {
     color: #0D0D0D;
     font-size: 10px;
-    margin: 3% 0%;
+    margin: 2% 0%;
     font-weight: bold;
     display: block;
     text-decoration: none;
