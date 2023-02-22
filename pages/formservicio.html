@@ -8,7 +8,7 @@
     <title>Formulario servicio</title>
 </head>
 <body>
-    <header>
+    <header class="head">
 
         <!-- Logo -->
         <a class="logo" href="#">PortalSupport
@@ -16,36 +16,31 @@
         </a>
 
         <!-- Navegador -->
-        <nav class="navegador">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-            </ul>
-
-              <!-- Desplegable servicios -->
-            <ul>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Soporte de redes</a></li>
-                <li><a href="#">Soporte de impresoras</a></li>
-                <li><a href="#">Soporte remoto</a></li>
-                <li><a href="#">Asesoria</a></li>
-            </ul>
-            <!-- Desplegable Productos -->
-            <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Software</a></li>
-            </ul>
-            
+        
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </nav>
             <!-- Buscador -->
-            <div class="buscar">
-                Buscar<input type="text">
-            </div>
+            <div class="box">
+
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
+              </div>
+              
 
             <!-- Botones de Ingreso y Registro -->
-            <button class="ingresar">Ingresar</button>
-            <button class="registrarse">Registrarse</button>
-        </nav>
+            <button class="btnNav">Ingresar</button>
+            <button class="btnNav">Registrarse</button>
+
     </header>
+    <hr>
 
     <section class="soliservicio">
         <h1>Solicitud de servicio</h1>
