@@ -6,8 +6,7 @@
 #5E90F2 azul Medio claro nav
 #23459F azul extra*/
 * {
-    margin: 0px;
-    padding: 0px;
+
     box-sizing: border-box;
     /*adaparta el contenido de la caja*/
 }
@@ -26,28 +25,38 @@ body {
     font-weight: bold;
 }
 
+.soliservicio{
+
+    border-radius: 15px;
+    border: 5px solid #0CB1F2 ;
+    margin: 3% 5%;
+    padding: 30px;
+
+}
+
 .soliservicio >p{
     color: #0D0D0D;
     font-size: 18px;
-    margin: 2% 4%;
+    margin: 2% 5%;
     text-align: left;
     font-weight: bold;
+    
 }
 
 .formServicio {
-    width: 90%;
+    width: 70%;
     height: auto;
     margin: 5% auto;
     border-radius: 15px;
     padding: 25px 35px;
     margin-top: 5%;
     background-color: #EDEDE8;
+
     
 }
 
-.formServicio> input, label, button, select {
+.formServicio> input {
   
-    width: 100%;
     margin: 2% 0%;
 
 }
@@ -55,12 +64,10 @@ body {
 
 .formServicio>input {
     padding: 12px 2px;
-    border-radius: 8%;
     outline: none;
     border-radius: 5px;
     border: 0;
     width: 40%;
-    display: inline-block;
 }
 
 .formServicio>label {
@@ -78,7 +85,7 @@ body {
     border: 0;
 }
 
-.btnServicio {
+.botonServicios{
     background: #0CB1F2;
     border-radius: 6px;
     color: #fff;
@@ -94,7 +101,8 @@ body {
     
 }
 
-.btnServicio:hover{
+.botonServicios:hover{
+
     background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
 
 }
