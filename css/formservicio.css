@@ -12,12 +12,19 @@
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+ 
     background-attachment: fixed;
     /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
 }
 
-.soliservicio >h1{
+.soliservicio{
+
+    border-radius: 8px;
+    border: 5px solid #0CB1F2;
+    margin: 3% 5%;
+}
+
+.soliservicio>h1 {
     color: #0D0D0D;
     font-size: 30px;
     margin: 2% 0%;
@@ -25,84 +32,68 @@ body {
     font-weight: bold;
 }
 
-.soliservicio{
-
-    border-radius: 15px;
-    border: 5px solid #0CB1F2 ;
-    margin: 3% 5%;
-    padding: 30px;
-
-}
-
-.soliservicio >p{
+.soliservicio>p {
     color: #0D0D0D;
     font-size: 18px;
-    margin: 2% 5%;
+    margin: 2% 4%;
     text-align: left;
     font-weight: bold;
-    
 }
 
 .formServicio {
-    width: 70%;
-    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 83%;
     margin: 5% auto;
     border-radius: 15px;
-    padding: 25px 35px;
+    padding: 3% 40px;
     margin-top: 5%;
     background-color: #EDEDE8;
-
-    
 }
 
-.formServicio> input {
-  
-    margin: 2% 0%;
+.forLabelServ {
 
+    display: block;
+    font-weight: 700;
+    padding: 10px;
 }
 
+.forGrupoServInput {
 
-.formServicio>input {
+    position: relative;
+}
+
+.formInputGod {
+
+    width: 90%;
+    border-radius: 8px;
     padding: 12px 2px;
     outline: none;
-    border-radius: 5px;
     border: 0;
-    width: 40%;
+
 }
 
-.formServicio>label {
-    text-align: left;
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 11px;
- 
-}
+.servicioTipo {
 
-.formServicio>select{
-    width: 20%;
-    padding: 10px;
-    border-radius: 7%;
+    width: 90%;
+    padding: 12px 2px;
+    border-radius: 8px;
     border: 0;
 }
 
-.botonServicios{
+.btnServicio {
     background: #0CB1F2;
     border-radius: 6px;
     color: #fff;
     font-size: 15px;
-    padding: 8px 20px;
-    margin: 2% 3%;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 8px 30px;
+    margin: 7% 3%;
     text-decoration: none;
     font-weight: bold;
     border: 0;
-    width: 15%;
-    
-}
-
-.botonServicios:hover{
-
-    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
+    width: 45%;
 
 }
+

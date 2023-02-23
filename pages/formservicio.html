@@ -45,38 +45,61 @@
     <section class="soliservicio">
         <h1>Solicitud de servicio</h1>
         <p>Programa hoy tu servicio de soporte técnico remoto y soluciona los problemas con tus equipos de cómputo ya sean portátiles, pc de escritorio, servidores y redes de comunicaciones.</p>
-        <form id="formServicio" class="formServicio">
-            
-            <label for="nameServicio">NOMBRES</label>
-            <input type="text" class="nameServicio" id="nameServicio" name="nameServicio" placeholder=""
-            maxlength="25" minlength="3" required> <!--nombre-->
-          
-            <label for="lastnameServicio">APELLIDOS</label>
-            <input type="text" class="lastnameServicio" id="lastnameServicio" name="lastnameServicio" placeholder=""
-            maxlength="25" minlength="3" required> <!--apellidos-->
-   
+        <form action="" class="formServicio" id="formServicio">
+		
+            <div class="forGrupoServ" id="forGrupoServ">
+				<label for="usuario" class="forLabelServ">NOMBRES</label>
+				<div class="forGrupoServInput">
+					<input type="text" class="formInputGod" name="nombre" id="nombre" placeholder="">
+				</div>
+			</div>
 
-            <label for="emailServicios">CORREO ELECTRONICO</label>
-            <input type="email" class="emailServicios" name="emailServicios" id="emailServicios" required placeholder="@" min="18" max="65"> <!--CORREO ELECTRONICO-->
+			<div class="forGrupoServ" id="forGrupoServ">
+				<label for="nombre" class="forLabelServ">APELLIDOS</label>
+				<div class="forGrupoServInput">
+					<input type="text" class="formInputGod" name="apellido" id="apellido" placeholder=" ">
+				</div>
+			</div>
 
-            <label for="telefonoServicio">TELEFONO</label>
-            <input type="number" class="telefonoServicio" placeholder="Telefono" required name="telefonoServicio" id="telefonoServicio"><!--Telefono-->
+			<div class="forGrupoServ" id="forGrupoServ">
+				<label for="correo" class="forLabelServ">CORREO ELECTRONICO</label>
+				<div class="forGrupoServInput">
+					<input type="email" class="formInputGod" name="correo" id="correo" placeholder="@">
+				</div>
+			</div>
 
-            <label for="tipoServicio">TIPO DE SERVICIO</label><!--tipo serv-->
-            <select name="servicioTipo" id="servicioTipo">
-            <optgroup label="Tipo servicio">
-                <option value="java">Seleccione servicio</option>
-                <option value="mantecompu">Mantenimiento de computadoras</option>
-                <option value="manteimpre">Mantenimiento de impresoras</option>
-                <option value="sopores">Soporte de redes</option>
-                <option value="soporremo">Soporte remoto</option>
-                <option value="aseso">Asesorias</option>
-            </optgroup>
-            </select>
-            <br>
-        <button type="submit" class="botonServicios">Enviar Solicitud</button>
+			<div class="forGrupoServ" id="forGrupoServ">
+				<label for="telefono" class="forLabelServ">TELÉFONO</label>
+				<div class="forGrupoServInput">
+					<input type="number" class="formInputGod" name="telefono" id="telefono" placeholder="">
+				</div>
+			</div>
 
-        </form>
+
+            <div class="forGrupoServ" id="forGrupoServ">
+				<label for="telefono" class="forLabelServ">TIPO DE SERVICIO</label>
+				<div class="forGrupoServSelect">
+					<select name="servicioTipo" id="servicioTipo" class="servicioTipo">
+                        <optgroup label="Tipo servicio">
+                            <option value="java">Seleccione servicio</option>
+                            <option value="mantecompu">Mantenimiento de computadoras</option>
+                            <option value="manteimpre">Mantenimiento de impresoras</option>
+                            <option value="sopores">Soporte de redes</option>
+                            <option value="soporremo">Soporte remoto</option>
+                            <option value="aseso">Asesorias</option>
+                        </optgroup>
+                        </select>
+				</div>
+			</div>
+
+            <div class="forGrupoServ" id="forGrupoServ">
+				<div class="forGrupoServInput">
+					<input type="hidden" class="formInputGod">
+				</div>
+			</div>
+
+            <button  class="btnServicio">Enviar solicitud</button>
+		</form>
     </section>
 
     <main>
