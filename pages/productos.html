@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="head">
 
         <!-- Logo -->
         <a class="logo" href="#">PortalSupport
@@ -17,38 +17,34 @@
         </a>
 
         <!-- Navegador -->
-        <nav class="navegador">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-            </ul>
-
-              <!-- Desplegable servicios -->
-            <ul>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Soporte de redes</a></li>
-                <li><a href="#">Soporte de impresoras</a></li>
-                <li><a href="#">Soporte remoto</a></li>
-                <li><a href="#">Asesoria</a></li>
-            </ul>
-            <!-- Desplegable Productos -->
-            <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Software</a></li>
-            </ul>
-            
+        
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </nav>
             <!-- Buscador -->
-            <div class="buscar">
-                Buscar<input type="text">
-            </div>
+            <div class="box">
+
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
+              </div>
+              
 
             <!-- Botones de Ingreso y Registro -->
-            <button class="ingresar">Ingresar</button>
-            <button class="registrarse">Registrarse</button>
-        </nav>
+            <button class="btnNav">Ingresar</button>
+            <button class="btnNav">Registrarse</button>
+
     </header>
+    <hr>
     <main>
-        <h1>productos</h1><!--titulo-->
+        <h1 class="tilteproductos">productos</h1><!--titulo-->
+        <br><br>
         
         <h2>------ofertas------</h2><!--apartado de ofertas-->
         <hr>
@@ -85,99 +81,98 @@
         <section class="categoria"><!--seccion categoria-->
             
             <div class="cardcat">
-                <img src="../assets/img/portatilcat.png" alt="cloud data">   
+                <img class="imgcate" src="../assets/img/portatilcat.png" alt="cloud data">   
                 <h3 class="title-card">portatiles</h3>            
             </div> 
             <div class="cardcat">
-                <img src="../assets/img/chasis1.png" alt="cloud data">
+                <img class="imgcate" src="../assets/img/chasis1.png" alt="cloud data">
                 <h3 class="title-card">chasis</h3>
             </div>
             <div class="cardcat">
-                <img src="../assets/img/componentes1.png" alt="cloud data">
+                <img class="imgcate" src="../assets/img/componentes1.png" alt="cloud data">
                  <h3 class="title-card" >componentes</h3>
             </div>
             
             <div class="cardcat">
-                <img src="../assets/img/monitor1.webp" alt="cloud data">
+                <img class="imgcate" src="../assets/img/monitor22.png" alt="cloud data">
                 <h3 class="title-card" >monitores</h3>
             </div>
             <div class="cardcat">
-                <img src="../assets/img/perifericos.png" alt="cloud data">
+                <img class="imgcate" src="../assets/img/perifericos.png" alt="cloud data">
                 <h3 class="title-card" >perifericos</h3>
             </div>
         </section>
+
         <h2>------productos------</h2><!--seccion de productos-->
         <hr>
         <section class="productos">
-            
 
-            <select class="filtarpro" name="filtarpro" id="filtar">  <!--filtros-->
-                <option value="0" selected>filtar por:</option>
-                <option value="precio">precio</option>
-                <option value="marca">marca</option>
-                <option value="portatiles">portatiles</option>
-                <option value="pc de mesa">pc de mesa</option> 
-               
-            </select>
            
-            <section class="cardspro">
+            <div class="cardspro">
                 <div class="card">
                     <img class="imgpro" src="../assets/img/monitor1.webp" alt="cloud data">
                     <p class="title-card" >KOORUI Monitor de computadora de 24 pulgadas Full HD 1920 x 1080p, </p>
+                    <button class="botonpro">añadir al carrito</button>
                 </div >
-                <button class="botonpro">añadir al carrito</button>
+                
                 <div class="card">
                     <img class="imgpro" src="../assets/img/monitor22.png" alt="cloud data">
                     <p class="title-card" >Monitor de computadora de 24 pulgadas Full HD 1920 x 1080p,</p>
+                    <button class="botonpro">añadir al carrito</button>
                 </div>
-                <button class="botonpro">añadir al carrito</button>
+                
                 <div  class="card">
                      <img class="imgpro" src="../assets/img/ramm.png" alt="cloud data">
-                    <p class="title-card" >memoria ram de 16 gb</p>
+                    <p class="title-card" >memoria ram de 16 gb</p> 
+                    <button class="botonpro">añadir al carrito</button>
                 </div>
-                <button class="botonpro">añadir al carrito</button>
+               
                 <div class="card">
                     <img class="imgpro" src="../assets/img/grafica.webp" alt="cloud data">
                     <p class="title-card" >grafica ultimo modelo hiperomegaultrabuena</p>
+                    <button class="botonpro">añadir al carrito</button>
                 </div>
-                <button class="botonpro">añadir al carrito</button>
+                
                 <div class="card">
                     <img class="imgpro" src="../assets/img/silla-gamer-power-group_blue_1.png" alt="cloud data">
-                    <p class="title-card" >silla comodisisisisima gamer </p>
-                </div> 
+                    <p class="title-card" >silla comodisisisisima gamer </p> 
                     <button class="botonpro">añadir al carrito</button>
-            
-           
-        </section>
+                </div> 
+                   
+            </div>
+        </section> 
+       
+        
         <hr>
 
         
     <!-- Pie de página -->
-        <footer class="pie">
-            <h2>PortalSupport</h2>
-            <p> Recibe soporte técnico integral con la experiencia
-                y calidad por parte de una empresa de mantenimiento de computadores. </p>
-            <h3>Páginas</h3>
-            <ul>
-                <li><a href="#"></a>Inicio</li>
-                <li><a href="#"></a>Servicios</li>
-                <li><a href="#"></a>Productos</li>
-                <li><a href="#"></a>Quienes somos</li>
-            </ul>
-            <h3>Servicios</h3>
-            <ul>
-                <li><a href="#">Mantenimirnto</a></li>
-                <li><a href="#"></a>Ensamblaje</li>
-                <li><a href="#"></a>Asesorias</li>
-            </ul>
-            <h3>Contácto</h3>
-            <ul>
-                <li><img src="#"><a href="#">telefono</a></li>
-                <li><img src="#"><a href="#">email</a></li>
-                <li><img src="#"><a href="#">dirección</a></li>
-            </ul>
-        </footer>
+       
     </main>
+    <footer class="pie">
+        <h2>PortalSupport</h2>
+        <p> Recibe soporte técnico integral con la experiencia
+            y calidad por parte de una empresa de mantenimiento de computadores. </p>
+        <h3>Páginas</h3>
+        <ul>
+            <li><a href="#"></a>Inicio</li>
+            <li><a href="#"></a>Servicios</li>
+            <li><a href="#"></a>Productos</li>
+            <li><a href="#"></a>Quienes somos</li>
+        </ul>
+        <h3>Servicios</h3>
+        <ul>
+            <li><a href="#">Mantenimirnto</a></li>
+            <li><a href="#"></a>Ensamblaje</li>
+            <li><a href="#"></a>Asesorias</li>
+        </ul>
+        <h3>Contácto</h3>
+        <ul>
+            <li><img src="#"><a href="#">telefono</a></li>
+            <li><img src="#"><a href="#">email</a></li>
+            <li><img src="#"><a href="#">dirección</a></li>
+        </ul>
+    </footer>
     <script src="https://kit.fontawesome.com/0f1e390382.js" crossorigin="anonymous"></script>
 
 </body>
