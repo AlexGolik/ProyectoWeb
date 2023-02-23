@@ -27,6 +27,8 @@ body {
     padding: 25px 35px;
     margin-top: 5%;
     background-color: #EDEDE8;
+    box-shadow: 7px 7px 7px 7px rgb(0, 0, 0,0.1);
+
 }
 
 .formRegister>h1 {
@@ -78,10 +80,6 @@ body {
 
 }
 
-.btnRegister:hover{
-    background:  linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
-    
-}
 
 /* seccion de lo de abajo boton*/
 .formRegister>a {

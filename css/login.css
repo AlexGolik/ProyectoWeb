@@ -5,18 +5,25 @@
 #1B51F2 azul oscuro footer
 #5E90F2 azul Medio claro nav
 #23459F azul extra*/
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
     /*adaparta el contenido de la caja*/
 }
 
 body {
+    
+    font-family: 'Crete Round', serif;
     background-image: url(../assets/img/FondoTodoAJ.PNG);
-    font-family: 'Josefin Sans', sans-serif;
-    background-attachment: fixed;
-    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+    background-repeat: repeat-y repeat-x;
+    background-position: 100%;
+ 
+
 }
 
 .formLogin {
@@ -27,8 +34,10 @@ body {
     padding: 25px 35px;
     margin-top: 5%;
     background-color: #EDEDE8;
+    box-shadow: 7px 7px 7px 7px rgb(0, 0, 0,0.1);
 
 }
+
 
 .formLogin>h1 {
     color: #0D0D0D;
@@ -47,7 +56,6 @@ body {
 
 .formLogin>input {
     padding: 12px 2px;
-    border-radius: 8%;
     outline: none;
     border-radius: 5px;
     border: 0;
@@ -77,9 +85,6 @@ body {
     border: 0;
 }
 
-.btnLogin:hover{
-    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
-}
 
 /* seccion de lo de abajo boton*/
 .formLogin>a {
