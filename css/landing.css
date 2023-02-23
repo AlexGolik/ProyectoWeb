@@ -68,12 +68,6 @@ header {
 
 /* Buscar... */
 
-.buscar {
-  display: flex;
-  border: none;
-  text-decoration: none;
-}
-
 .search input#search:hover,
 .search input#search:focus,
 .search input#search:active {
@@ -91,9 +85,10 @@ header {
   float: left;
   color: #262626;
   padding-left: 45px;
+  border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  
   -webkit-transition: background .55s ease;
   -moz-transition: background .55s ease;
   -ms-transition: background .55s ease;
@@ -102,9 +97,20 @@ header {
 
 }
 
-.contaicontainer-search .icon {
-  float: left;
-  color: black;
+.search{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 200px;
+  padding-left: 180px;
+  
+}
+
+.icon-search{
+  margin: 0px 2px;
+  background-color: #dadada;
+  padding: 15px 20px;
+  border-radius: 5px 0px 0px 5px;
+  color: #262626;
 }
 
 /**************************************************/
@@ -528,4 +534,8 @@ img {
 
 .footer ul {
   padding: 0px 40px;
+}
+
+.img-social{
+  width: 40%;
 }
