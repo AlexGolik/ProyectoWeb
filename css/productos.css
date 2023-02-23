@@ -4,22 +4,41 @@
     box-sizing: border-box;
     /*adaparta el contenido de la caja*/
 }
+
 /*seccion de ofertas*/
-.ofertas{
-    width: 100% ;
-    height: auto;
-    background-color:#EDEDE8;
+.tilteproductos{
+   
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
- 
-    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
-}
-.tarjetaof{
-      display: inline-block;
-    width: 20%;
+    text-decoration: none;
 
 }
-.tarjetaof :hover{
+.ofertas{
+    width: 80%;
+    height: auto;
+    background-color:#EDEDE8;
+    border-radius: 3%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    position: relative;
+    left: 10%;
+
+}
+.ofertas>div{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+     width: 20%;
+     height: auto;
+     text-align: center;
+     border: 6px solid #0cb1f29a;
+     border-radius: 5%;
+     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+.ofertas>div:hover{
+    width: 22%;
+    height: 22%;
     background-color: rgba(0, 0, 0, 0.082);
     transition: 0.5s;
 
@@ -44,6 +63,9 @@
     border: 0;
     width: 50%;
 }
+.botonproof hover{
+    background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
+}
 
 
 
@@ -53,94 +75,102 @@ h2{
     margin: 20px;
 }
 .categoria{
-    text-align: center;
-    width: 100% ;
+    width: 80%;
     height: auto;
-    overflow: auto;
     background-color:#EDEDE8;
+    border-radius: 3%;
+    text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    background-attachment: fixed;
-    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+    padding: 10px;
+    position: relative;
+    left: 10%;
 }
 .categoria>div{
-    display:inline-block;
-    width: 15%;
-    height: auto;
+    display: inline-block;
+    margin: 8px;
+    padding: 2px;
+     width: 15%;
+     height: auto;
+     text-align: center;
+     border: 6px solid #0cb1f29a;
+     border-radius: 5%;
+     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     
 }
-.categoria>div  :hover{
-   margin: 2px;
-   transition: 0.3s;
-   background-color: rgba(0, 0, 0, 0.066);
+.categoria>div:hover{
+    background-color: rgba(0, 0, 0, 0.082);
+    transition: 0.5s;
 }
-.categoria>div>img{
+.imgcate{
    width: 60%;
-   height: 40%;
-   margin: 5px;
-    
+   height: auto; 
 }
+
 /*seccion productos*/
-.filtarpro{
-    width: 20%;
-    border: solid 1px rgb(74, 73, 73);
-    border-radius: 8%;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #EDEDE8;
-   
-}
+
 .productos{
-    width: 100% ;
+    width: 50% ;
     height: auto;
     background-color:#EDEDE8;
     font-family: 'Josefin Sans', sans-serif;
-    background-attachment: fixed;
-    /*determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor*/
+    position: relative;
+    left: 25%;
+    border-radius: 5%;
+    
 }
 
 .cardspro{
-    display: inline;
-    position: relative;
-    left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+ 
 }
-.cardspro>div{
-   
-    width: 60%;
-    height: auto;
 
+.cardspro>div{
+   margin: 20px;
+   padding: 5px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    border: 6px solid #0cb1f29a;
+    border-radius: 5%;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 .imgpro{
-    width: 30%;
-    height: 10%;
+    width: 60%;
+    height: 30%;
     margin: 5px;
-
 }
-
-.cardspro  :hover{
- background-color: rgba(0, 0, 0, 0.082);
+.cardspro>div:hover{
+    width: 35%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.082);
  transition: 0.5s;
- 
-
 }
+
+
+
 .botonpro{
     background: #0CB1F2;
     border-radius: 6px;
     color: #fff;
     font-size: 15px;
-    padding: 8px 20px;
+    padding: 6px 10px;
     margin: 2% 3%;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
     font-weight: bold;
     border: 0;
-    width: 15%;
+    width: 50%;
 }
 
 
 
 .botonpro :hover{
     background: linear-gradient(90deg, rgba(110,240,234,1) 0%, rgba(9,85,121,0.5466561624649859) 0%, rgba(6,198,237,1) 53%);
+    height: 60%;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -158,13 +188,7 @@ h2{
    
 }
 
-/*.cadrscarrito{
-    width: 100%;
-    height: auto
-    background-color: #EDEDE8;
 
-   
-}*/
 .pagocarrito{
     width: 14%;
     text-align: center;
