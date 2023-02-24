@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/formservicio.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Formulario servicio</title>
 </head>
 <body>
+  
     <header class="head">
 
         <!-- Logo -->
@@ -16,32 +17,30 @@
         </a>
 
         <!-- Navegador -->
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#remoto">Productos</a></li>
+                <li><a href="#contactenos">Contactenos</a></li>
+            </ul>
+        </nav>
+        <!-- Buscador -->
         
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contactenos</a></li>
-                </ul>
-            </nav>
-            <!-- Buscador -->
-            <div class="box">
 
-                <div class="container-1">
-                    <span class="icon"><i class="fa fa-search"></i></span>
-                    <input type="search" id="search" placeholder="Buscar..." />
-                </div>
-              </div>
-              
+            <div class="search">
+                <span class="icon-search"><i class="fa-solid fa-magnifying-glass fa-2x fa-lg"></i></span>
+                <input type="search" id="search" placeholder="Buscar..." />
+            </div>
 
-            <!-- Botones de Ingreso y Registro -->
-            <button class="btnNav">Ingresar</button>
-            <button class="btnNav">Registrarse</button>
+        <!-- Botones de Ingreso y Registro -->
+        <button class="btnNav"><a href="pages/login.html">Ingresar</a></button>
+        <button class="btnNav"><a href="pages/registrar.html">Registrarse</a></button>
 
     </header>
     <hr>
-
+    <main>
     <section class="soliservicio">
         <h1>Solicitud de servicio</h1>
         <p>Programa hoy tu servicio de soporte técnico remoto y soluciona los problemas con tus equipos de cómputo ya sean portátiles, pc de escritorio, servidores y redes de comunicaciones.</p>
@@ -101,33 +100,41 @@
             <button  class="btnServicio">Enviar solicitud</button>
 		</form>
     </section>
+    <footer class="footer">
+        <h2 class="tittle-logo">PortalSupport</h2>
+        <p class="parrafo-logo">Recibe soporte técnico integral con la experiencia y calidad por parte de una empresa de
+            mantenimiento de computadores. </p>
 
-    <main>
-        <footer class="pie">
-            <h2>PortalSupport</h2>
-            <p>Recibe soporte técnico integral con la experiencia 
-                y calidad por parte de una empresa de mantenimiento de computadores.</p>
-
+        <ul>
             <h3>Páginas</h3>
-            <ul>
-                <li><a href="#"></a>Inicio</li>
-                <li><a href="#"></a>Servicios</li>
-                <li><a href="#"></a>Productos</li>
-                <li><a href="#"></a>Quienes somos</li>
-            </ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/formservicio.html">Servicios</a></li>
+            <li><a href="../pages/productos.html">Productos</a></li>
+            <li><a href="../pages/somos.html">Quienes somos</a></li>
+        </ul>
+
+        <ul>
             <h3>Servicios</h3>
-            <ul>
-                <li><a href="#"></a>Mantenimiento</li>
-                <li><a href="#"></a>Ensamble</li>
-                <li><a href="#"></a>Asesoria</li>
-            </ul>
+            <li><a href="../pages/formservicio.html">Mantenimiento</a></li>
+            <li><a href="../pages/formservicio.html"></a>Ensamblaje</li>
+            <li><a href="../pages/formservicio.html"></a>Asesorias</li>
+        </ul>
+
+        <ul>
             <h3>Contácto</h3>
-            <ul>
-                <li><img src="#"><a href="#">telefono</a></li>
-                <li><img src="#"><a href="#">email</a></li>
-                <li><img src="#"><a href="#">dirección</a></li>
-            </ul>
-        </footer>
-    </main>
+            <li><img src="#"><a href="#">(406)555-0120</a></li>
+            <li><img src="#"><a href="#">PortalSupport@gmail.com</a></li>
+            <li><img src="#"><a href="#">Cra.33a #30-20, Teusaquillo, Bogotá</a></li>
+        </ul>
+        
+        <ul class="social">
+            <h3>Redes Sociales</h3>
+            <li><a href="#"><img class="img-social" src="../assets/img/icons8-facebook.svg"></a>Facebook</li>
+            <li><a href="#"><img class="img-social" src="../assets/img/icons8-twitter.svg"></a>Twitter</li>
+            <li><a href="#"><img class="img-social" src="../assets/img/icons8-linkedin.svg"></a>linkedin</li>
+            <li><a href="#"><img class="img-social" src="../assets/img/icons8-instagram.svg"></a>Instagram</li>
+        </ul>
+    </footer>
+</main>
 </body>
 </html>

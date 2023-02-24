@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Login</title>
 </head>
 
 <body>
-    <form id="formLogin" class="formLogin">
+    <form id="form" class="form">
         <h1>Iniciar Sesión</h1>
-        <label for="nameLogin">NOMBRE DE USUARIO</label>
-        <input type="text" class="controluno" id="nameLogin" name="nameLogin" placeholder="@"
+        <label for="name">NOMBRE DE USUARIO</label>
+        <input type="text" class="controluno" id="name" name="nameLogin" placeholder="@"
             maxlength="20" minlength="3" required> <!--USUARIO-->
         
         <label for="passwordLogin">CONTRASEÑA</label>
         <input type="password" class="passwordLogin" placeholder=""
             required title="Ingresa tu contraseña" name="passwordLogin" id="passwordLogin"> <!--CONTRASEÑA-->
         
-        <button type="submit" class="btnLogin" id="btnLogin">INICIAR SESIÓN</button>
+        <input class="checkPolitica" type="checkbox" id="checkPolitica">
+        <label class="labelPolitica" for="checkPolitica"></label>
+        
+        <button type="submit" class="btn_Send" id="btnSend">INICIAR SESIÓN</button>
         
         <a for="termino">¿NO PUEDES INICIAR SESIÓN?</a>
         <a href="./registrar.html">CREAR CUENTA</a>
     </form>
 </body>
+<script src="../dist/Validacion.js"></script>
 </html>
