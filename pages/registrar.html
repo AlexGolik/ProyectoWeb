@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Registrarse</title>
 </head>
 <body>
 
-    <form id="formRegister" class="formRegister">
+    <form id="form" class="form">
         <h1>Registrarse</h1>
-        <label for="nameRegister">NOMBRE DE USUARIO</label>
-        <input type="text" class="controluno" id="nameRegister" name="nameRegister" placeholder=""
-         maxlength="10" minlength="3" required> <!--USUARIO-->
+        <label for="names">NOMBRE DE USUARIO</label>
+        <input type="text" id="names" name="names"> <!--USUARIO-->
 
-        <label for="emailRegister">CORREO ELECTRONICO</label>
-        <input type="email" class="controluno" placeholder="@" required title="Ingresa tu contraseña" name="emailRegister" id="emailRegister"><!--CONTRASEÑA-->
+        <label for="email">CORREO ELECTRONICO</label>
+        <input type="email" placeholder="@" name="email" id="email"><!--CONTRASEÑA-->
 
-        <label for="passwordRegister">CONTRASEÑA</label>
-        <input type="password" class="controluno" placeholder="" required title="Ingresa tu contraseña" name="passwordRegister" id="passwordRegister"><!--CONTRASEÑA-->
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" name="password" id="password"><!--CONTRASEÑA-->
 
-        <label for="passwordRegisterDos">REPETIR CONTRASEÑA</label>
-        <input type="password" class="controluno" placeholder="" required title="Ingresa tu contraseña" name="passwordRegisterDos" id="passwordRegisterDos"><!--CONTRASEÑA-->
+        <label for="passwordDos">REPETIR CONTRASEÑA</label>
+        <input type="password" name="passwordDos" id="passwordDos"><!--CONTRASEÑA-->
 
-        <button type="submit" class="btnRegister" id="btnRegister">Iniciar Sesión</button>
+        <input class="checkPolitica" type="checkbox" id="checkPolitica">
+        <label class="labelPolitica" for="checkPolitica">Acepto todas las politicas</label>
+
+        <button type="submit" class="btn_Send" id="btnSend">Iniciar Sesión</button>
 
         <a for="termino">¿YA TIENES CUENTA?</a>
         <a href="./login.html">INICIAR SESIÓN</a>
 
     </form>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="../dist/formularioRegistrar.js"></script>
 </html>
