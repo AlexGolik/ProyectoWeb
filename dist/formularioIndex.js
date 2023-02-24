@@ -2,14 +2,12 @@ import { Validacion } from "./Validacion.js";
 //Instaciar un objeto
 
 const validacion = new Validacion();
-const formulario = document.getElementById("formServicio");
+const formulario = document.getElementById("form");
 const btn = document.getElementById("btnSend");
 //objeto de validacion
 const formValid = {
-    nombres: false,
-    apellidos: false,
+
     email: false,
-    telf: false,
     textlargo: true
 }
 
@@ -27,26 +25,12 @@ formulario.addEventListener("change", (e) => {
     };
 
     switch (inputId) {
-        case "names":
-            formValid.nombres = validacion.validNames(miValue);
-            formValid.nombres ? validClass() : inValidClass();
-            console.log(Object.values(formValid));
-            break;
-        case "lastname":
-            formValid.apellidos = validacion.validNames(miValue);
-            formValid.apellidos ? validClass() : inValidClass();
-            console.log(Object.values(formValid));
-            break;
         case "email":
             formValid.email = validacion.validMail(miValue);
             formValid.email ? validClass() : inValidClass();
             console.log(Object.values(formValid));
             break;
-        case "telf":
-            formValid.telf = validacion.validTelf(miValue);
-            formValid.telf ? validClass() : inValidClass();
-            console.log(Object.values(formValid));
-            break;
+      
 
     }
     //envio del form
@@ -59,12 +43,12 @@ btn.addEventListener("click", (e) => {
     if (validacion.validarForm(formValid) === -1) {
         Swal.fire(
             'Datos Enviados!',
-            'Te estaremos contactando lo mas pronto que padamos, para tu solicitud!',
+            'Te estaremos contactando lo mas pronto que padamos!',
             'success'
         )
-        let datos = new FormData(document.getElementById('formServicio'));
+        let datos = new FormData(document.getElementById('form'));
         console.log(datos);
     }
-    formServicio.reset();
+    form.reset();
 
 });

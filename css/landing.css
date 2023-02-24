@@ -542,6 +542,13 @@ img {
 
 }
 
+.is-valid {
+  border-bottom: 6px solid greenyellow !important; /*Para la especificidad*/
+}
+/*class*/
+.is-invalid { 
+  border-bottom: 5px solid #f81818 !important;
+}
 
 .contact>h1 {
   color: #0D0D0D;
@@ -602,6 +609,7 @@ img {
 }
 
 /* Pie de página */
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -612,7 +620,7 @@ img {
 
 .tittle-logo .parrafo-logo {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   text-align: end;
 }
 
@@ -636,8 +644,14 @@ img {
   padding: 0px 40px;
 }
 
-.img-social{
-  width: 40%;
+.img-social {
+  width: 30%;
+
+}
+
+.img-contacto {
+  width: 7%;
+
 }
 
 
