@@ -7,6 +7,7 @@ const btn = document.getElementById("btnSend");
 //objeto de validacion
 const formValid = {
     nombres: false,
+    apellidos: false,
     mail: false,
     pass: false,
     passTwo: true,
@@ -30,6 +31,11 @@ formulario.addEventListener("change", (e) => {
         case "names":
             formValid.nombres = validacion.validNames(miValue);
             formValid.nombres ? validClass() : inValidClass();
+            console.log(Object.values(formValid));
+            break;
+        case "lastname":
+            formValid.apellidos = validacion.validNames(miValue);
+            formValid.apellidos ? validClass() : inValidClass();
             console.log(Object.values(formValid));
             break;
         case "email":
@@ -58,10 +64,10 @@ Swal.fire({
     title: '¡Bienvenido!',
     text: "Recuerda que la contraseña debe tener al entre 5 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula",
     icon: 'info'
-    
-  })
 
-  
+})
+
+
 btn.addEventListener("click", (e) => {
     e.preventDefault();
     if (validacion.validarForm(formValid) === -1) {
