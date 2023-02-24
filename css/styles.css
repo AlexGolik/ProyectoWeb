@@ -881,6 +881,13 @@ h2 {
 /*******************************************************************/
 
 /* On smaller screens, decrease text size */
+
+@media screen and (max-width: 2000px){
+    .contact {
+        margin-left: 100px;
+        margin-top: 80px;
+      }   
+}
 @media screen and (max-width: 1520px){
     /**************************************************/
   

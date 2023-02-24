@@ -16,7 +16,7 @@
 
         <!-- Logo -->
         <a class="logo" href="#">PortalSupport
-            <img src="#" id="logo">
+            <img src="./assets/img/triangulo (5).png" id="logo">
         </a>
 
         <!-- Navegador -->
@@ -25,7 +25,7 @@
             <ul class="navbar">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#remoto">Productos</a></li>
+                <li><a href="#productos">Productos</a></li>
                 <li><a href="#contactenos">Contactenos</a></li>
             </ul>
         </nav>
@@ -78,7 +78,7 @@
 
         <!-- Servicios -->
         <section class="servicios">
-            <h1 class="tittle-1" id="servicios">------------- Servicios -------------</h1>
+            <h1 class="tittle-1" id="servicios">Servicios</h1>
             <p class="parrafo">Recibe soporte técnico integral con la experiencia y calidad por parte de una empresa de
                 mantenimiento de
                 computadores. Te brindamos soluciones ajustadas a tus necesidades: soporte técnico remoto, mantenimiento
@@ -111,11 +111,19 @@
 
         <!-- Productos desctacados -->
         <section class="productos">
-            <h1 class="tittle-1">------------- Productos Destacados -------------</h1>
+            <h1 class="tittle-1" id="productos">Productos Destacados</h1>
             <div class="container-card">
                 <div class="card-promo"><p>Registrate y obtendras un 70% en toda la tienda</p><button href="pages/registrar.html" class="btn-promo"><a href="pages/registrar.html">Registrarme</a> </button></div>
                 <div class="card-product"><img class="img-1" src="./assets/img/monitor1.webp">
                     <p>Monitores de la mejor calidad</p>
+                    <button href="pages/productos.html" class="btnP"><a href="pages/productos.html">ver más</a> </button>
+                </div>
+                <div class="card-product"><img class="img-1" src="./assets/img/ramm.png">
+                    <p>Compra una y lleva dos RAM!</p>
+                    <button href="pages/productos.html" class="btnP"><a href="pages/productos.html">ver más</a> </button>
+                </div>
+                <div class="card-product"><img class="img-1" src="./assets/img/perifericos.png">
+                    <p>Combo de perifericos! 2x1</p>
                     <button href="pages/productos.html" class="btnP"><a href="pages/productos.html">ver más</a> </button>
                 </div>
 
@@ -125,18 +133,17 @@
 
         <!-- Contáctenos -->
         <section class="contactenos">
-            <h1 class="tittle-1" id="contactenos">------------- Contactenos -------------</h1>
+            <h1 class="tittle-1" id="contactenos">Contactenos</h1>
             <div class="map">
-                <form id="formLogin" class="contact">
+                <form id="form" class="contact">
                     <h1>Contactenos</h1>
-                    <label for="nameLogin">Correo:</label>
-                    <input type="text" class="controluno" id="nameLogin" name="nameLogin" placeholder="@" maxlength="20"
-                        minlength="3" required> <!--USUARIO-->
+                    <label for="email">Correo:</label>
+                    <input type="text" class="controluno" id="email" name="email" placeholder="@"> <!--USUARIO-->
 
                     <label for="comentario">Mensaje:</label>
                     <textarea name="mensaje" rows="20" cols="63"></textarea><!--CONTRASEÑA-->
 
-                    <button type="submit" class="btncontac" id="btnLogin">Enviar</button>
+                    <button type="submit" class="btncontac" id="btnSend">Enviar</button>
 
 
                 </form>
@@ -188,10 +195,7 @@
             <li><a href="#"><img class="img-social" src="../assets/img/icons8-instagram.svg"></a>Instagram</li>
         </ul>
     </footer>
-<<<<<<< HEAD
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="module" src="./dist/formularioIndex.js"></script>
-=======
 
->>>>>>> 452f3adcc35f4014d3d55bcff645b4433da29309
 </body>

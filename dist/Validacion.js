@@ -19,14 +19,13 @@ class Validacion {
         return response;
 
     }
-    validPass(cad) { /*La contraseña debe tener al entre 5 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula. NO puede tener otros símbolos.*/
-        const passRX = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{5,16}$/g;
+    validPass(cad) { 
         const response = this.inputValid(cad, passRX)
         return response;
 
     }
     validTelf(cad) { /*La contraseña debe tener al entre 5 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula. NO puede tener otros símbolos.*/
-        const telfRX = /^\d{10}$$/g;
+        const telfRX = /^\d{10}$/g;
         const response = this.inputValid(cad, telfRX)
         return response;
 

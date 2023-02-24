@@ -1,6 +1,4 @@
 'use strict'
-
-
 /**************************************************************/
 // Funcion para slidery
 let slideIndex = 0;

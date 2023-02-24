@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,40 @@
 
 <header class="head">
 
+    <!-- Logo -->
+    <a class="logo" href="#">PortalSupport
+        <img src="../assets/img/triangulo (5).png" id="logo">
+    </a>
+
+    <!-- Navegador -->
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#remoto">Productos</a></li>
+            <li><a href="#contactenos">Contactenos</a></li>
+        </ul>
+    </nav>
+    <!-- Buscador -->
+    <div class="search">
+        <span class="icon-search"><i class="fa-solid fa-magnifying-glass fa-2x fa-lg"></i></span>
+        <input type="search" id="search" placeholder="Buscar..." />
+    </div>
+
+    <!-- Botones de Ingreso y Registro -->
+    <button class="btnNav"><a href="pages/login.html">Ingresar</a></button>
+    <button class="btnNav"><a href="pages/registrar.html">Registrarse</a></button>
+
 
 </header>
 
-    <body>  
+<body>
     <hr>
-    <main >
-     <div class="containercarrito">
-       <h1 class="h1carrito" > mi carrito</h1>
-       <link rel="stylesheet" href="../assets/img/laptop-solid.svg">
+    <main>
+        <div class="containercarrito">
+            <h1 class="h1carrito"> mi carrito</h1>
+            <link rel="stylesheet" href="../assets/img/laptop-solid.svg">
             <br>
             <section class="cadrscarrito" id="cadrscarrito">
             </section>
@@ -30,31 +56,45 @@
             </select>
             <button class="butoncarrito" type="button">pagar</button><!--boton para pagar -->
             <button class="butoncarrito" type="button">quitar del carrito</button>
-    </div>
-         <!-- Pie de página -->
-         <hr>
-         <footer class="pie">
-            <h2>PortalSupport</h2>
-            <p> Recibe soporte técnico integral con la experiencia
-                y calidad por parte de una empresa de mantenimiento de computadores. </p>
-            <h3>Páginas</h3>
+        </div>
+        <!-- Pie de página -->
+        <hr>
+        <footer class="footer">
+            <h2 class="tittle-logo">PortalSupport</h2>
+            <p class="parrafo-logo">Recibe soporte técnico integral con la experiencia y calidad por parte de una
+                empresa de
+                mantenimiento de computadores. </p>
+
             <ul>
-                <li><a href="#"></a>Inicio</li>
-                <li><a href="#"></a>Servicios</li>
-                <li><a href="#"></a>Productos</li>
-                <li><a href="#"></a>Quienes somos</li>
+                <h3>Páginas</h3>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/formservicio.html">Servicios</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/somos.html">Quienes somos</a></li>
             </ul>
-            <h3>Servicios</h3>
+
             <ul>
-                <li><a href="#">Mantenimirnto</a></li>
-                <li><a href="#"></a>Ensamblaje</li>
-                <li><a href="#"></a>Asesorias</li>
+                <h3>Servicios</h3>
+                <li><a href="../pages/formservicio.html">Mantenimiento</a></li>
+                <li><a href="../pages/formservicio.html"></a>Ensamblaje</li>
+                <li><a href="../pages/formservicio.html"></a>Asesorias</li>
             </ul>
-            <h3>Contácto</h3>
+
             <ul>
-                <li><img src="#"><a href="#">telefono</a></li>
-                <li><img src="#"><a href="#">email</a></li>
-                <li><img src="#"><a href="#">dirección</a></li>
+                <h3>Contácto</h3>
+                <li><img class="img-contacto" src="../assets/img/phone-solid.svg"><a href="#"></a>(406)555-0120</li>
+                <li><img class="img-contacto" src="../assets/img/envelope-solid.svg"><a
+                        href="#"></a>PortalSupport@gmail.com</li>
+                <li><img class="img-contacto" src="../assets/img/map-marker-alt-solid.svg"><a href="#"></a>Cra.33a
+                    #30-20, Teusaquillo, Bogotá</li>
+            </ul>
+
+            <ul class="social">
+                <h3>Redes Sociales</h3>
+                <li><a href="#"><img class="img-social" src="../assets/img/icons8-facebook.svg"></a>Facebook</li>
+                <li><a href="#"><img class="img-social" src="../assets/img/icons8-twitter.svg"></a>Twitter</li>
+                <li><a href="#"><img class="img-social" src="../assets/img/icons8-linkedin.svg"></a>linkedin</li>
+                <li><a href="#"><img class="img-social" src="../assets/img/icons8-instagram.svg"></a>Instagram</li>
             </ul>
         </footer>
     </main>
