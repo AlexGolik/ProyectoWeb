@@ -12,22 +12,19 @@
 <body>
     <form id="form" class="form">
         <h1>Iniciar Sesión</h1>
-        <label for="name">NOMBRE DE USUARIO</label>
-        <input type="text" class="controluno" id="name" name="nameLogin" placeholder="@"
-            maxlength="20" minlength="3" required> <!--USUARIO-->
-        
-        <label for="passwordLogin">CONTRASEÑA</label>
-        <input type="password" class="passwordLogin" placeholder=""
-            required title="Ingresa tu contraseña" name="passwordLogin" id="passwordLogin"> <!--CONTRASEÑA-->
-        
-        <input class="checkPolitica" type="checkbox" id="checkPolitica">
-        <label class="labelPolitica" for="checkPolitica"></label>
-        
+        <label for="email">CORREO ELECTRÓNICO</label>
+        <input type="text" class="controluno" id="email" name="email" placeholder="@"> <!--USUARIO-->
+
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" class="passwordLogin" name="password" id="password"> <!--CONTRASEÑA-->
+
         <button type="submit" class="btn_Send" id="btnSend">INICIAR SESIÓN</button>
-        
+
         <a for="termino">¿NO PUEDES INICIAR SESIÓN?</a>
         <a href="./registrar.html">CREAR CUENTA</a>
     </form>
 </body>
-<script src="../dist/Validacion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="../dist/formularioLogin.js"></script>
+
 </html>
