@@ -45,59 +45,47 @@
         <h1>Solicitud de servicio</h1>
         <p>Programa hoy tu servicio de soporte técnico remoto y soluciona los problemas con tus equipos de cómputo ya sean portátiles, pc de escritorio, servidores y redes de comunicaciones.</p>
         <form action="" class="formServicio" id="formServicio">
-		
-            <div class="forGrupoServ" id="forGrupoServ">
-				<label for="usuario" class="forLabelServ">NOMBRES</label>
-				<div class="forGrupoServInput">
-					<input type="text" class="formInputGod" name="nombre" id="nombre" placeholder="">
-				</div>
-			</div>
-
-			<div class="forGrupoServ" id="forGrupoServ">
-				<label for="nombre" class="forLabelServ">APELLIDOS</label>
-				<div class="forGrupoServInput">
-					<input type="text" class="formInputGod" name="apellido" id="apellido" placeholder=" ">
-				</div>
-			</div>
-
-			<div class="forGrupoServ" id="forGrupoServ">
-				<label for="correo" class="forLabelServ">CORREO ELECTRONICO</label>
-				<div class="forGrupoServInput">
-					<input type="email" class="formInputGod" name="correo" id="correo" placeholder="@">
-				</div>
-			</div>
-
-			<div class="forGrupoServ" id="forGrupoServ">
-				<label for="telefono" class="forLabelServ">TELÉFONO</label>
-				<div class="forGrupoServInput">
-					<input type="number" class="formInputGod" name="telefono" id="telefono" placeholder="">
-				</div>
-			</div>
-
 
             <div class="forGrupoServ" id="forGrupoServ">
-				<label for="telefono" class="forLabelServ">TIPO DE SERVICIO</label>
-				<div class="forGrupoServSelect">
-					<select name="servicioTipo" id="servicioTipo" class="servicioTipo">
-                        <optgroup label="Tipo servicio">
-                            <option value="java">Seleccione servicio</option>
-                            <option value="mantecompu">Mantenimiento de computadoras</option>
-                            <option value="manteimpre">Mantenimiento de impresoras</option>
-                            <option value="sopores">Soporte de redes</option>
-                            <option value="soporremo">Soporte remoto</option>
-                            <option value="aseso">Asesorias</option>
-                        </optgroup>
-                        </select>
-				</div>
-			</div>
+                <label for="names" class="forLabelServ">NOMBRES</label>
+                <div class="forGrupoServInput">
+                    <input type="text" class="formInputGod" name="names" id="names" placeholder="">
+                </div>
+            </div>
 
             <div class="forGrupoServ" id="forGrupoServ">
-				<div class="forGrupoServInput">
-					<input type="hidden" class="formInputGod">
-				</div>
-			</div>
+                <label for="lastname" class="forLabelServ">APELLIDOS</label>
+                <div class="forGrupoServInput">
+                    <input type="text" class="formInputGod" name="lastname" id="lastname" placeholder=" ">
+                </div>
+            </div>
 
-            <button  class="btnServicio">Enviar solicitud</button>
+            <div class="forGrupoServ" id="forGrupoServ">
+                <label for="email" class="forLabelServ">CORREO ELECTRÓNICO</label>
+                <div class="forGrupoServInput">
+                    <input type="email" class="formInputGod" name="email" id="email" placeholder="@">
+                </div>
+            </div>
+
+            <div class="forGrupoServ" id="forGrupoServ">
+                <label for="telf" class="forLabelServ">TELÉFONO</label>
+                <div class="forGrupoServInput">
+                    <input type="number" class="formInputGod" name="telf" id="telf" placeholder="">
+                </div>
+            </div>
+
+
+            <div class="forGrupoServ" id="forGrupoServ">
+                <label for="servi" class="forLabelServ">DESCRIBIR TIPO DE SERVICIO</label>
+                <div class="forGrupoServSelect">
+                    <input type="text" class="formInputGod" name="servi" id="servi" placeholder="">
+                </div>
+            </div>
+
+            <a type="hidden"></a>
+
+            <button type="submit" class="btnServicio" id="btnSend">Enviar Solicitud</button>
+        </form>
 		</form>
     </section>
     <footer class="footer">
@@ -137,4 +125,6 @@
     </footer>
 </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="../dist/formularioServicio.js"></script>
 </html>
